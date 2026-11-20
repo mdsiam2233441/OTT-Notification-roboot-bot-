@@ -45,14 +45,14 @@ def load_env():
 
 
 load_env()
-TOKEN = os.getenv("BOT_TOKEN", "").strip()
+TOKEN = os.getenv("BOT_TOKEN", "9105774355:AAFDzDm8bCdtl2qoQdDg1ONY1juS2vUkyF8").strip()
 if ":" not in TOKEN:
     sys.exit(
         "\n❌ BOT_TOKEN পাওয়া যায়নি বা ভুল।\n"
         "   bot.py যে ফোল্ডারে আছে সেখানে '.env' নামে ফাইল বানান (.env.example নয়) এবং লিখুন:\n"
         "   BOT_TOKEN=123456789:AAH-your-token\n"
     )
-ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "").replace(" ", "").split(",") if x.strip().isdigit()}
+ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "1686274364").replace(" ", "").split(",") if x.strip().isdigit()}
 SUPPORT_URL = os.getenv("SUPPORT_URL", "https://t.me/telegram")
 UPDATE_URL = os.getenv("UPDATE_CHANNEL_URL", "https://t.me/telegram")
 CONTACT_URL = os.getenv("CONTACT_URL", "https://t.me/telegram")
